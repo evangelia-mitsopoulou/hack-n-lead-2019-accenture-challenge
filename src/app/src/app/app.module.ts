@@ -6,17 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {MatInputModule} from '@angular/material/input';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LearningGoalComponentComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    MatAutocompleteModule
   ],
+  exports:[LearningGoalComponentComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
