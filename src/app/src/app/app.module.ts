@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {FormsModule, ReactiveFormsModule}   from '@angular/forms';
+
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 
 @NgModule({
@@ -19,7 +21,9 @@ import { LearningGoalComponentComponent } from './components/learning-goal-compo
     BrowserAnimationsModule,
     AppRoutingModule,
     MatInputModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
