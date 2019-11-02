@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
 
@@ -21,6 +21,9 @@ export const _filter = (opt: string[], value: string): string[] => {
 })
 export class LearningGoalComponentComponent implements OnInit {
 
+  isLinear = false;
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
   stateForm: FormGroup = this._formBuilder.group({
     stateGroup: '',
   });
@@ -47,6 +50,12 @@ export class LearningGoalComponentComponent implements OnInit {
       startWith(''),
       map(value => this._filterGroup(value))
     );
+    this.firstFormGroup = this._formBuilder.group({
+      firstCtrl: ['', Validators.required]
+    });
+    this.secondFormGroup = this._formBuilder.group({
+      secondCtrl: ['', Validators.required]
+    });
   }
 
   private _filterGroup(value: string): StateGroup[] {
