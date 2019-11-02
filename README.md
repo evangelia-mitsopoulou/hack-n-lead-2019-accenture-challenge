@@ -10,3 +10,11 @@
 4. This repository **must** be open source (and licensed) in order to submit
 
 
+## App Installion 
+
+1. Install Node.js
+2. Install git
+3. Clone the repo
+4. Under src/app/ run npm install
+5. Under src/app npm run start
+
