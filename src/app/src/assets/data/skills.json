@@ -1,0 +1,40 @@
+{
+  "skillgroups": [
+    {
+      "id": "1",
+      "groupname": "frontend",
+      "skills": [
+        {
+          "id": "1",
+          "name": "HTML"
+        },
+        {
+          "id": "2",
+          "name": "Bootstrap"
+        },
+        {
+          "id": "3",
+          "name": "Javascript"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "groupname": "backend",
+      "skills": [
+        {
+          "id": "4",
+          "name": "nodeJS"
+        },
+        {
+          "id": "5",
+          "name": "graphQL"
+        },
+        {
+          "id": "6",
+          "name": "hosting on <Heroku> platform"
+        }
+      ]
+    }
+  ]
+}
