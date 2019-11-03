@@ -2,33 +2,51 @@
   "skillgroups": [
     {
       "id": "1",
-      "groupname": "frontend",
+      "groupname": "Javascript",
       "skills": [
         {
           "id": "1",
-          "name": "HTML"
+          "name": "Syntax"
         },
         {
           "id": "2",
-          "name": "Bootstrap"
+          "name": "Objects"
         },
         {
           "id": "3",
-          "name": "Javascript"
+          "name": "Asynchronous Events"
         }
       ]
     },
     {
       "id": "2",
-      "groupname": "backend",
+      "groupname": "CSS",
       "skills": [
         {
           "id": "4",
-          "name": "nodeJS"
+          "name": "ITCSS"
         },
         {
           "id": "5",
-          "name": "graphQL"
+          "name": "Preprocessors"
+        },
+        {
+          "id": "6",
+          "name": "hosting on <Heroku> platform"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "groupname": "CSS",
+      "skills": [
+        {
+          "id": "4",
+          "name": "ITCSS"
+        },
+        {
+          "id": "5",
+          "name": "Preprocessors"
         },
         {
           "id": "6",

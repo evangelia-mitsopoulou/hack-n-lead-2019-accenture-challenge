@@ -14,12 +14,14 @@ import {MatCardModule} from '@angular/material/card';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
+import { ScenariodetailviewComponent } from './components/scenariodetailview/scenariodetailview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LearningGoalComponentComponent,
-    SourcesToolbarComponent
+    SourcesToolbarComponent,
+    ScenariodetailviewComponent
   ],
   imports: [
     BrowserModule,
