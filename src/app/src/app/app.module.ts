@@ -10,13 +10,16 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule}   from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
+import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LearningGoalComponentComponent
+    LearningGoalComponentComponent,
+    SourcesToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { LearningGoalComponentComponent } from './components/learning-goal-compo
     FormsModule,
     ReactiveFormsModule,
     MatStepperModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],

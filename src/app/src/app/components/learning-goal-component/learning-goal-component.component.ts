@@ -12,6 +12,7 @@ export interface Scenarios {
   id: string;
   title: string;
   description: string;
+  image:string;
   skills: string[]
 }
 
@@ -56,6 +57,7 @@ export class LearningGoalComponentComponent implements OnInit {
       "id": "1",
       "title": "Todo list application ( - web, mobile, native)",
       "description": "Everybody needs a todo list. but why use a standard - make your own and learn to code while doing it! In this scenario you'll Learn to use <learning topic> and apply your knowledge in practice by [helping to] developing a todo list application.",
+      "image":"",
       "skills": [
         "Frontend development",
         "HTML",
@@ -71,6 +73,7 @@ export class LearningGoalComponentComponent implements OnInit {
       "id": "2",
       "title": "Site for managing an association",
       "description": "Managing an association can be complex. We need to keep track of the members, payments and expenses. New members shall be able to apply for a membership, and once approved by the association's board, access private content and connect with other members. In this scenario you'll Learn to use <learning topic> and apply your knowledge in practice by [helping to] developing a todo list application.",
+      "image":"",
       "skills": [
         "Frontend development",
         "Angular",
@@ -84,6 +87,7 @@ export class LearningGoalComponentComponent implements OnInit {
       "id": "3",
       "title": "Playing with Asynchronicity",
       "description": "",
+      "image":"../../assets/asynchronicity.jpg",
       "skills": [
         "Asynchronous Programming",
         "Geolocation API"
@@ -92,6 +96,7 @@ export class LearningGoalComponentComponent implements OnInit {
     {
       "id": "4",
       "title": "Distance Calculator",
+      "image":"../../assets/distance.jpg",
       "description": "",
       "skills": [
         "Asynchronous Programming",

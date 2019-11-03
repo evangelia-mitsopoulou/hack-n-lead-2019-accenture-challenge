@@ -6,6 +6,19 @@ mat-grid-tile {
     background: #ece8e8;
   }
 
+.mat-card-image {
+    margin: 0 -16px 0px -16px;
+    max-height:88px;
+}  
+
+.mat-card-content {
+    font-size:12px;
+    text-align: center;
+    background-color:#ececec;
+    padding:5px;
+    margin-top:-2px;
+    width:130px;
+}
   span {
     padding:7px;
     font-size:12px;
