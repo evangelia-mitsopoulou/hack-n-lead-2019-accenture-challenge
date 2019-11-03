@@ -1,23 +1,20 @@
-<mat-tab-group>
-        <mat-tab>
-          <ng-template mat-tab-label>
+<nav mat-tab-nav-bar>
+    <a routerLink="/">
+        <div>
             <mat-icon class="example-tab-icon">build</mat-icon>
-            Learn
-            </ng-template>
-        </mat-tab>
-      <a routerlink="/statistics-view">
-        <mat-tab label="Trophies" icon="games">
-          <ng-template mat-tab-label>
+            <span>Learn</span>
+        </div>
+    </a>
+    <a routerLink="/statistics-view">
+        <div>
             <mat-icon class="example-tab-icon">games</mat-icon>
-            Trophies
-        </ng-template>
-        test!!!!!!!!!!
-        </mat-tab>
-    </a>  
-        <mat-tab>
-          <ng-template mat-tab-label>
-            <mat-icon class="example-tab-icon">note_add</mat-icon>
-            Contribute
-        </ng-template>
-        </mat-tab>
-      </mat-tab-group>
+            <span>Trophies</span>
+        </div>
+    </a>
+    <a>
+        <div>
+        <mat-icon class="example-tab-icon">note_add</mat-icon>
+        <span>Contribute</span>
+        </div>
+    </a>
+</nav>

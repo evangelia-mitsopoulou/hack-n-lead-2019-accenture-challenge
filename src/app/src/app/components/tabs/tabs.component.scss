@@ -1,22 +1,10 @@
-.mat-tab-group{
-    position:relative;
-    top:15px;
-}
 
-mat-tab-label{
-    min-width:80px;
-    color:white;
-}
-
-.mat-tab-label{
-    min-width:80px;
-    color:white;
-}
 
 mat-icon {
     font-size:16px;
     position:Relative;
     top:3px;
+    left:8px;
 }
 
 .mat-tab-label {
@@ -28,3 +16,13 @@ mat-icon {
             }
     }  
 }}
+
+a:visited {
+    color:white;
+}
+
+.mat-tab-links {
+    div {
+        margin-right:20px;
+    }
+}
