@@ -20,6 +20,8 @@ import { LearningGoalComponentComponent } from './components/learning-goal-compo
 import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
 import { ScenariodetailviewComponent } from './components/scenariodetailview/scenariodetailview.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
     LearningGoalComponentComponent,
     SourcesToolbarComponent,
     ScenariodetailviewComponent,
-    TabsComponent
+    TabsComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
