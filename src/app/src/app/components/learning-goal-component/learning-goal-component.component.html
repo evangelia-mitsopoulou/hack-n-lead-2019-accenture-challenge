@@ -20,9 +20,9 @@
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
         <ng-template matStepLabel>Choose case scenario</ng-template>
-        <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-list cols="2" rowHeight="1:1">
             <ng-container *ngFor="let scenario of scenarios">
-                <mat-grid-tile>{{scenario.title}}</mat-grid-tile>
+                <mat-grid-tile><span>{{scenario.title}}</span></mat-grid-tile>
             </ng-container>
         </mat-grid-list>
         <div>
