@@ -1,0 +1,30 @@
+.mat-tab-group{
+    position:relative;
+    top:15px;
+}
+
+mat-tab-label{
+    min-width:80px;
+    color:white;
+}
+
+.mat-tab-label{
+    min-width:80px;
+    color:white;
+}
+
+mat-icon {
+    font-size:16px;
+    position:Relative;
+    top:3px;
+}
+
+.mat-tab-label {
+    &.mat-ripple {
+        &.mat-tab-label-active {
+            &.ng-star-inserted {
+                min-width:60px;
+                color:white;
+            }
+    }  
+}}

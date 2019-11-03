@@ -14,17 +14,20 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
 import { ScenariodetailviewComponent } from './components/scenariodetailview/scenariodetailview.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LearningGoalComponentComponent,
     SourcesToolbarComponent,
-    ScenariodetailviewComponent
+    ScenariodetailviewComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { ScenariodetailviewComponent } from './components/scenariodetailview/sce
     MatCardModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
