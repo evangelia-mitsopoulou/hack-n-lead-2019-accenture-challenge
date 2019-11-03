@@ -19,7 +19,7 @@
         </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
-        <ng-template matStepLabel>Choose case scenario</ng-template>
+        <ng-template matStepLabel>Choose a scenario</ng-template>
         <mat-grid-list cols="2" rowHeight="1:1">
             <ng-container *ngFor="let scenario of scenarios">
                 <a routerLink="/scenario-view" routerLinkActive="active">
@@ -40,8 +40,16 @@
         </div>
     </mat-step>
     <mat-step>
-        <ng-template matStepLabel>Done</ng-template>
-        You are now done.
+        <ng-template matStepLabel>Receive feedback from stakeholders</ng-template>
+        Feedback is essential to reach mastery.
+        <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Earn trophies</ng-template>
+        Earn trophies and share your success!
         <div>
             <button mat-button matStepperPrevious>Back</button>
             <button mat-button (click)="stepper.reset()">Reset</button>
