@@ -1,7 +1,7 @@
 <mat-vertical-stepper [linear]="false" #stepper>
     <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="stateForm">
-                <ng-template matStepLabel>What do you want to learn? </ng-template>
+            <ng-template matStepLabel>What do you want to learn? </ng-template>
             <mat-form-field>
                 <input type="text" matInput placeholder="Learning Goals" formControlName="stateGroup" required
                     [matAutocomplete]="autoGroup">
@@ -19,15 +19,15 @@
         </form>
     </mat-step>
     <mat-step [stepControl]="secondFormGroup">
-        <form [formGroup]="secondFormGroup">
-            <ng-template matStepLabel>Choose case scenario</ng-template>
-            <mat-form-field>
-                <input matInput placeholder="Address" formControlName="secondCtrl" required>
-            </mat-form-field>
-            <div>
-                <button mat-button matStepperPrevious>Back</button>
-                <button mat-button matStepperNext>Next</button>
-            </div>
-        </form>
+        <ng-template matStepLabel>Choose case scenario</ng-template>
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <ng-container *ngFor="let scenario of scenarios">
+                <mat-grid-tile>{{scenario.title}}</mat-grid-tile>
+            </ng-container>
+        </mat-grid-list>
+        <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+        </div>
     </mat-step>
 </mat-vertical-stepper>

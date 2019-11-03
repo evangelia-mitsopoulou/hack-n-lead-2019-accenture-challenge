@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {FormsModule, ReactiveFormsModule}   from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 
@@ -25,7 +26,8 @@ import { LearningGoalComponentComponent } from './components/learning-goal-compo
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
-    MatStepperModule
+    MatStepperModule,
+    MatGridListModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
