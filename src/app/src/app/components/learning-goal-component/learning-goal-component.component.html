@@ -22,15 +22,16 @@
         <ng-template matStepLabel>Choose case scenario</ng-template>
         <mat-grid-list cols="2" rowHeight="1:1">
             <ng-container *ngFor="let scenario of scenarios">
-                <!--<mat-grid-tile><span>{{scenario.title}}</span></mat-grid-tile>-->
-                <mat-grid-tile>
+                <a routerLink="/scenario-view" routerLinkActive="active">
+                    <mat-grid-tile>
                         <mat-card class="example-card">
                             <img mat-card-image src="{{scenario.image}}" alt="Photo of a Shiba Inu">
                             <mat-card-content>
-                                    {{scenario.title}}
-                            </mat-card-content>     
+                                {{scenario.title}}
+                            </mat-card-content>
                         </mat-card>
                     </mat-grid-tile>
+                    </a>
             </ng-container>
         </mat-grid-list>
         <div>
