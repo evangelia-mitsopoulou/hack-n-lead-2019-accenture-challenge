@@ -12,6 +12,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
@@ -35,7 +36,8 @@ import { ScenariodetailviewComponent } from './components/scenariodetailview/sce
     MatStepperModule,
     MatGridListModule,
     MatCardModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
