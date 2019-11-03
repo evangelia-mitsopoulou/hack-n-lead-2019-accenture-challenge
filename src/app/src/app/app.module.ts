@@ -13,6 +13,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 import { LearningGoalComponentComponent } from './components/learning-goal-component/learning-goal-component.component';
 import { SourcesToolbarComponent } from './components/sources-toolbar/sources-toolbar.component';
@@ -37,7 +38,8 @@ import { ScenariodetailviewComponent } from './components/scenariodetailview/sce
     MatGridListModule,
     MatCardModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
   exports:[LearningGoalComponentComponent],
   providers: [],
