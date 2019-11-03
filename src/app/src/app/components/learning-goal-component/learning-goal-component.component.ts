@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Observable} from 'rxjs';
-import {startWith, map} from 'rxjs/operators';
+import {startWith, map, switchMap} from 'rxjs/operators';
 
 export interface StateGroup {
   letter: string;
@@ -44,8 +44,8 @@ export class LearningGoalComponentComponent implements OnInit {
     letter: 'Css',
     names: ['ITCSS', 'Preprocessors', 'Atomic Design']
   }, {
-    letter: 'Html',
-    names: ['Syntax', 'Geolocation API', "Canvas API"]
+    letter: 'HTML',
+    names: ['Bootstrap', 'Geolocation API', "Canvas API"]
   }
 ];
 
@@ -79,6 +79,24 @@ export class LearningGoalComponentComponent implements OnInit {
         "graphQL",
         "hosting on <Heroku> platform"
       ]
+    },
+    {
+      "id": "3",
+      "title": "Playing with Asynchronicity",
+      "description": "",
+      "skills": [
+        "Asynchronous Programming",
+        "Geolocation API"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Distance Calculator",
+      "description": "",
+      "skills": [
+        "Asynchronous Programming",
+        "Distance Matrix API"
+      ]
     }
   ]
 
@@ -86,7 +104,7 @@ export class LearningGoalComponentComponent implements OnInit {
     this.stateGroupOptions = this.stateForm.get('stateGroup')!.valueChanges
     .pipe(
       startWith(''),
-      map(value => this._filterGroup(value))
+      map(value => this._filterGroup(value)),
     );
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required]
@@ -98,6 +116,7 @@ export class LearningGoalComponentComponent implements OnInit {
 
   private _filterGroup(value: string): StateGroup[] {
     if (value) {
+      this.scenarios = this.scenarios.filter(scenario => scenario.skills.indexOf(value) !== -1);
       return this.stateGroups
         .map(group => ({letter: group.letter, names: _filter(group.names, value)}))
         .filter(group => group.names.length > 0);
